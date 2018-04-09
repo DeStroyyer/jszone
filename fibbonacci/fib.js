@@ -1,6 +1,5 @@
 function fib(number) {
-    if (number <= 1) return 1;
-    else return fib(number - 1) + fib(number - 2);
+    return (number <= 1) ? 1 : fib(number - 1) + fib(number - 2);
 }
 
 console.log(fib(1));
