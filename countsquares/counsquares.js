@@ -1,8 +1,5 @@
 function countSqueras(number) {
-    if (number === 1) {
-        return 1;
-    }
-    else return (number - 1) * 4 + countSqueras(number - 1);
+    return number === 1 ? 1 : (number - 1) * 4 + countSqueras(number - 1);
 }
 
 console.log(countSqueras(1));
