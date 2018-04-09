@@ -1,6 +1,5 @@
 function fuctorialRec(number) {
-    if (number<=1) return 1;
-    else return fuctorialRec(number-1)*number;
+    return (number <= 1) ? 1 : fuctorialRec(number - 1) * number;
 }
 
 console.log(fuctorialRec(1));
