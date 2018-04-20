@@ -1,7 +1,7 @@
 function count() {
-    return [...Array(1000).keys()].filter(function (item) {
+    return [...Array(999).keys()].map(x => ++x).filter(function (item) {
         return item % 3 == 0 || item % 5 == 0
-    }).reduce(function (sum, current) {
+    }).reduce((sum, current) => {
         return sum + current;
     }, 0)
 }
