@@ -9,9 +9,9 @@ function count() {
             return array;
     }
 
-    return console.log(generator()
+    return generator()
         .filter((x) => {return x % 2 == 0})
-        .reduce((sum, current) => {return sum + current;}, 0))
+        .reduce((sum, current) => {return sum + current;}, 0)
 };
 
-count();
+console.log(count());
