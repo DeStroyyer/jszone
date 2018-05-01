@@ -10,10 +10,11 @@ function isPrime(num) {
     return true;
 }
 
-for (let i = 1; i <= Math.sqrt(data); i++) {
+for (let i = 1; i <= data; i++) {
     if (data % i == 0 && isPrime(i)) {
         if (i >= max) {
             max = i;
+            data/=i;
         }
     }
 }
